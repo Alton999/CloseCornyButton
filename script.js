@@ -26,3 +26,17 @@ form.addEventListener("submit", (event) => {
 });
 
 
+function setup(){
+  var canvas = createCanvas(window.innerWidth, window.innerHeight)
+  canvas.parent('canvas-container');
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight)
+}
+
+function draw(){
+  // Sets the canvas background every frame
+  background(255, 255, 230);
+  
+}

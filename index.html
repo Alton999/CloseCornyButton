@@ -7,62 +7,66 @@
 	<title>DECO1016 Web Form</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
   <!-- Insert your p5 script here -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 </head>
 
 <body id="canvas-container">
-<form id="payment">
+  <form id="payment">
       		<h2>Your details</h2>
-      		<ul>
-      			<li>
-      				<label for="name">Names</label>
-      				<input id="name" name="name" type="text" required>
+      		<ul >
+      			<li class='inline list-item'>
+      				<label for="FirstName">First name:</label>
+      				<input id="FirstName" name="First Name" type="text" required>
       			</li>
-      			<li>
-      				<label for="email">Email</label>
+      			<li class='inline list-item'>
+      				<label for="LastName">Last name:</label>
+      				<input id="LastName" name="Last Name" type="text" required>
+      			</li>
+      			<li class='list-item'>
+      				<label for="email">Email:</label>
       				<input id="email" name="email" type="text" required>
       			</li>
-      			<li>
-      				<label for="phone">Phone</label>
+      			<li class='list-item'>
+      				<label for="phone">Phone:</label>
       				<input id="phone" name="phone" type="text" required>
       			</li>
       		</ul>
 
       		<h3>Delivery address</h3>
       		<ul>
-      			<li>
-      				<label for="address">Address</label>
+      			<li class='list-item'>
+      				<label for="address">Address:</label>
       				<input id="address" name="address" type="text" required></input>
       			</li>
-      			<li>
-      				<label for="state">State</label>
+      			<li class='list-item'>
+      				<label for="state">State:</label>
       				<input id="state" name="state" type="text" required>
       			</li>
-      			<li>
-      				<label for="country">Country</label>
+      			<li class='list-item'>
+      				<label for="country">Country:</label>
       				<input id="country" name="country" type="text" required>
       			</li>
-                  			<li>
-      				<label for="postcode">Post code</label>
+            <li class='list-item'>
+      				<label for="postcode">Post code:</label>
       				<input id="postcode" name="postcode" type="text" required>
       			</li>
       		</ul>
       		<h3>Card details</h3>
       		<ul>
-            <li>
-                <label for="cardtype">Card Type</label>
+            <li class='list-item'>
+                <label for="cardtype">Card Type:</label>
   							<input id="cardtype" name="cardtype" type="text">
       			</li>
-            <li>
-      				<label for="namecard">Name on card</label>
+            <li class='list-item'>
+      				<label for="namecard">Name on card:</label>
       				<input id="namecard" name="namecard" type="text" required>
       			</li>
-      			<li>
-      				<label for="cardnumber">Card number</label>
+      			<li class='list-item'>
+      				<label for="cardnumber">Card number:</label>
       				<input id="cardnumber" name="cardnumber" type="text" required>
       			</li>
-      			<li>
-      				<label for="secure">Security code</label>
+      			<li class='list-item'>
+      				<label for="secure">Security code:</label>
       				<input id="secure" name="secure" type="text" required>
       			</li>
 
